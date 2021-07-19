@@ -1,0 +1,83 @@
+/*
+Для сброса стилей у списков(ul) используется класс "list", выделен в отдельный блок "list" в scss.
+
+Для сброса стилей у ссылок(a) используется класс link, выделен в отдельный блок "link" в scss.
+
+Для общих стилей(body) используется класс "page", либо его производные, если страниц несколько(main-page, product-page etc.). Выделен в отдельный блок в scss.
+
+Свойства стилей заданы в определенном порядке:
+ 1. Позиционирование
+ 2. Блочная модель
+ 3. Типографика
+ 4. Оформление
+ 5. Анимация
+ 6. Разное
+*/
+
+@import "vars";
+
+/*импорт normalize.css и slick slider */
+@import "libs";
+
+/*import other elements */
+@import "fonts";
+
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+}
+
+p {
+	margin: 0;
+}
+
+.page {
+	min-width: 320px;
+	
+	font-family: 'SFProDisplay-Regular', sans-serif;
+	font-size: 20px;
+	line-height: 24px;
+	font-weight: 400;
+	color: $text-color;
+
+	overflow-x: hidden;
+}
+
+.page__section {
+	margin-bottom: 80px;
+}
+
+/*import blocks*/
+@import "link";
+@import "list";
+@import "container";
+@import "header";
+@import "special-offer";
+@import "slider";
+@import "product-offer";
+@import "categories";
+@import "tabs";
+@import "popular-products";
+@import "banner";
+@import "footer";
+@import "breadcrumbs";
+@import "catalog";
+@import "pagination";
+@import "aside-filter";
+@import "product-card";
+
+@import "media";

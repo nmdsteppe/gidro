@@ -1,0 +1,86 @@
+.product-offer {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	max-width: 265px;
+
+	border: 1px solid #cdcdcd;
+	border-radius: 3px;
+
+	text-align: center;
+}
+
+.product-offer__header {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.offer-icon {
+	padding: 8px 20px;
+
+	color: #ffffff;
+	text-transform: uppercase;
+	font-size: 12px;
+	line-height: 15px;
+	letter-spacing: 0.1em;
+
+	background-color: $accent-color;
+}
+
+.offer-price {
+	font-family: $font-barlow;
+	text-align: right;
+}
+
+.offer-price__new {
+	margin-right: 6px;
+
+	font-size: 27px;
+	line-height: 32px;
+	font-weight: 700;
+	color: $accent-color;
+}
+
+.offer-price__old {
+	display: inline-block;
+	margin-right: 6px;
+	
+	font-size: 14px;
+	line-height: 17px;
+	font-weight: 400;
+	color: $thin-text-color;
+
+	background-image: url('../images/old-price-line.svg');
+	background-repeat: no-repeat;
+}
+
+.product-offer__img {
+	object-fit: contain;
+}
+
+.product-offer__title {
+	margin-bottom: 7px;
+	
+	font-family: $font-bold;
+	font-size: 18px;
+	line-height: 21px;
+	font-weight: 700;
+}
+
+.product-offer__info {
+	padding: 20px 25px;
+
+	font-size: 18px;
+	line-height: 21px;
+
+	background-color: $background-color;
+}
+
+.product-offer__decoration {
+	display: block;
+
+	font-family: $font-barlow;
+	font-weight: 700;
+	color: $accent-color;
+}

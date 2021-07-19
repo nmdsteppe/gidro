@@ -1,0 +1,169 @@
+.page__header {
+	margin-bottom: 78px;
+}
+
+.header-top__inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	font-family: $font-bold;
+	font-weight: 700;
+
+	min-height: 122px;
+}
+
+.menu__item {
+	display: inline-block;
+}
+
+.menu__item + .menu__item {
+	margin-left: 50px;
+}
+
+.menu__btn {
+	display: none;
+}
+
+.user-nav {
+	display: flex;
+	align-items: center;
+}
+
+.user-nav__adress {
+	position: relative;
+	margin-right: 60px;
+	padding-left: 30px;
+
+	width: 265px;
+}
+
+.user-nav__adress::before {
+	content: "";
+	position: absolute;
+	top: -10px;
+	left: 0;
+
+	height: 30px;
+	width: 30px;
+
+	background-image: url("../images/marker.svg");
+}
+
+.user-nav__list {
+	display: flex;
+	align-items: center;
+	margin-right: 15px;
+}
+
+.user-nav__item {
+	padding-right: 10px;
+
+	font-size: 0;
+	color: #ffffff;
+}
+
+.basket {
+	position: relative;
+}
+
+.basket__num {
+	position: absolute;
+	bottom: 2px;
+	right: -12px;
+
+	width: 20px;
+	height: 20px;
+
+	font-weight: 500;
+	font-size: 10px;
+	line-height: 20px;
+	text-align: center;
+	color: #ffffff;
+
+	background-color: $accent-color;
+	border-radius: 50%;
+}
+
+.menu-mobile__list {
+	position: absolute;
+	z-index: 10;
+
+	width: 243px;
+
+	background-color: #fff;
+
+	transform: translateX(-100%);
+	transition: all .3s;
+
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+}
+
+.menu-mobile__list--active {
+	transform: translateX(0%);
+}
+
+.menu-mobile__item {
+	position: relative;
+
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.menu-mobile__link {
+	display: block;
+	padding-top: 36px;
+	padding-left: 53px;
+}
+
+.menu-mobile__img {
+	position: absolute;
+	left: 11px;
+	bottom: 0;
+}
+
+.menu-mobile__wrapper {
+	display: none;
+}
+
+.product-categories {
+	min-height: 53px;
+
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+
+	background-color: $background-color;
+}
+
+.product-categories__item {
+	position: relative;
+}
+
+.product-categories__link {
+	position: relative;
+
+	padding: 15px 0 14px;
+
+	transition: all .3s;
+}
+
+.product-categories__link::before {
+	content: '';
+	position: absolute;
+	left: auto;
+	right: 0;
+	bottom: -2px;
+
+	width: 0;
+	height: 3px;
+
+	background-color: $accent-color;
+
+	transition: all .3s;
+}
+
+.product-categories__link:hover::before {
+	width: 100%;
+	right: auto;
+	left: 0;
+}
